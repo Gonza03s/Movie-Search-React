@@ -1,0 +1,119 @@
+/* Estilos generales */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+	
+
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+   
+  }
+  
+  input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+ 
+  }
+  
+  button {
+    padding: 10px 40px;
+    margin-top: 15px;
+    background-color: #363434;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+  }
+  
+  button:hover {
+    background-color: #6c6c6c;
+  }
+  
+  .movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .movie-card {
+    background-color: #f0ebeb;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .movie-card h2 {
+    color: #000;
+
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .movie-card p {
+    color: #000;
+    margin-bottom: 5px;
+
+  }
+  
+  /* Estilos para móviles */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.4em;
+    }
+  
+    input[type="text"] {
+      width: 100%;
+    }
+  
+    button {
+      padding: 8px 16px;
+    }
+  
+    .movie-list {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    .movie-card {
+      padding: 10px;
+    }
+  
+    .movie-card h2 {
+      font-size: 16px;
+    }
+  }
+  
